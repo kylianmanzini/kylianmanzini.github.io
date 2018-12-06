@@ -1,8 +1,58 @@
-hi! </br>
-</br>
-this is my futur portfolio website</br>
-</br>
-but my site is still not online,</br>
-it will be online on the 09.12.2018 at 6PM!</br>
-</br>
-sorry!</br>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="outils">
+            <div class="devkit">
+                <h2>dev</h2>
+                <ul>
+                    <li id="position"></li>
+                    <li id="paint"></li>
+                    <li id="size"></li>
+                    <li id="localStorage"></li>
+
+                </ul>
+            </div>
+            <div>
+                <h2 id="clear" onclick="clear()">Click here to clear the canvas</h2>
+            </div>
+            <div class="colors">
+                <h2>Colors</h2>
+                <ul>
+                    <li id="red">red</li>
+                    <li id="blue">blue</li>
+                    <li id="green">green</li>
+                    <li id="yellow">yellow</li>
+                    <li id="black" class="active">black</li>
+                    <li id="white">white</li>
+                </ul>
+            </div>
+            <div class="size">
+                <h2>Size</h2>
+                <ul>
+                    <li class="sizePreset">10</li>
+                    <li class="sizePreset active">20</li>
+                    <li class="sizePreset">30</li>
+                    <li class="sizePreset">40</li>
+                    <li class="sizePreset">50</li>
+                    <li class="sizePreset">60</li>
+                    <li id="size">custom size : <input id="sizeInput" type="number" max="100" min="1" onchange="changeSize()"></li>
+                </ul>
+            </div>
+            <div class="save">
+                <h2>Save</h2>
+                <ul>
+                    <li id="save" class="save">Click to save!</li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="myCanvas" width = '1300px' height = '700px' ></canvas>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
