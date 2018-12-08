@@ -1,0 +1,249 @@
+/*////////////////
+Basic declarations
+////////////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:300,400');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+header h1 {
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+li.link {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    color: #54bded;
+}
+
+header {
+    background: red;
+}
+
+.sidebar {
+    background: green;
+}
+
+.main-container {
+    background: blue;
+}
+
+/*////////////////
+Grid and page placement
+////////////////*/
+
+.page-width {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container,
+.work {
+    display: grid;
+    width: 100%;
+}
+
+.grid-container {
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "header header""nav main";
+}
+
+.work {
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "title title""desc img";
+}
+
+.sidebar {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+.main-container {
+    grid-area: main;
+}
+
+.title {
+    grid-area: title;
+}
+
+.img-container {
+    grid-area: img;
+}
+
+.description {
+    grid-area: desc;
+}
+
+/*///////////////////
+global modifications
+//////////////////*/
+
+.work,
+.about,
+form {
+    margin: 40px 0 0 0;
+}
+
+.content-container h1 {
+    font-size: 3rem;
+    text-align: right;
+}
+
+li.link {
+    font-size: 1.4rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+/*///////////////////
+darken + work-show
+//////////////////*/
+
+.darken {
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+/*
+#close {
+    position: fixed;
+    height: 50px;
+    top: 100px;
+    left:200px;
+    cursor: pointer;
+}
+*/
+.work-show {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    top: 40px;
+    height: auto;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    z-index: 10;
+    padding: 10px 140px;
+    overflow: scroll;
+}
+
+.work-show div {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.work-show div img {
+    width: 100%;
+    height: 100%;
+}
+/*
+#close span{
+    position: relative;
+    display: block;
+    height: 7px;
+    top: 20px;
+    width: 50px;
+    background: #54bded;
+}
+
+#close .n1{
+    transform: rotate(45deg) translate(4px);
+}
+
+#close .n2{
+    transform: rotate(-45deg) translate(4px);
+}
+*/
+/*///////////////////
+        Work
+//////////////////*/
+
+header {
+    height: 100px;
+}
+
+header h1 {
+    line-height: 100px;
+}
+
+/*///////////////////
+        Work
+//////////////////*/
+
+.works-container {
+    display: block;
+}
+
+.work {
+    cursor: pointer;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/*///////////////////
+        About
+//////////////////*/
+
+.about-container {
+    display: none;
+}
+
+/*///////////////////
+        Contact
+//////////////////*/
+
+
+.contact-container {
+    display: none;
+}
