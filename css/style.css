@@ -14,11 +14,14 @@ html {
 }
 
 body {
+    overflow-y: scroll;
     font-family: 'Roboto Slab', serif;
 }
 
 h1 {
     font-weight: 300;
+    background: white !important;
+    padding: 0 0 2rem 0;
 }
 
 h3 {
@@ -27,6 +30,7 @@ h3 {
 
 header h1 {
     font-weight: 400;
+    padding: 0;
 }
 
 li {
@@ -40,6 +44,12 @@ li.link {
 a {
     color: black;
     text-decoration: none;
+    transition: .4s all ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #54bded;
 }
 
 .active {
@@ -47,15 +57,19 @@ a {
 }
 
 header {
-    background: red;
+    background: white;
 }
 
 .sidebar {
-    background: green;
+    background: white;
 }
 
 .main-container {
-    background: blue;
+    /*background: #f6f6f6;*/
+}
+
+.hidden {
+    display: none !important;
 }
 
 /*////////////////
@@ -63,6 +77,9 @@ Grid and page placement
 ////////////////*/
 
 .page-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 920px;
     margin-left: auto;
     margin-right: auto;
@@ -80,9 +97,10 @@ Grid and page placement
 }
 
 .work {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 55% 45%;
     grid-template-areas: "title title""desc img";
 }
+
 
 .sidebar {
     grid-area: nav;
@@ -115,7 +133,7 @@ global modifications
 .work,
 .about,
 form {
-    margin: 40px 0 0 0;
+    margin: 5px 0 30px 0;
 }
 
 .content-container h1 {
@@ -130,6 +148,26 @@ li.link {
 .title {
     font-size: 2rem;
     margin: 15px 0;
+    padding: 1rem 0 0.5rem 0;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 10px;
+}
+
+.sidebar,
+.main-container {
+    margin-top: 100px;
+}
+
+header,
+nav {
+    position: fixed;
+}
+
+nav ul {
+    margin: 10vh 0 20vh 0;
 }
 
 /*///////////////////
@@ -141,9 +179,10 @@ darken + work-show
     z-index: 5;
     height: 100vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     display: none;
 }
+
 /*
 #close {
     position: fixed;
@@ -157,20 +196,26 @@ darken + work-show
     display: none;
     box-sizing: border-box;
     position: fixed;
-    top: 40px;
-    height: auto;
+    top: 10vh;
+    height: 80vh;
     width: 920px;
     margin-left: auto;
     margin-right: auto;
     background: white;
     z-index: 10;
-    padding: 10px 140px;
+    padding: 50px 140px;
     overflow: scroll;
 }
 
-.work-show div {
-    width: 100%;
-    max-height: 400px;
+.work-show p {
+    margin: 1rem 0;
+}
+
+.work-show-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -178,6 +223,7 @@ darken + work-show
     width: 100%;
     height: 100%;
 }
+
 /*
 #close span{
     position: relative;
@@ -220,15 +266,26 @@ header h1 {
     cursor: pointer;
 }
 
-.img-container {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.description {
+    padding: 0 1rem;
 }
 
-.img-container img {
+.work .img-container {
     width: 100%;
     height: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.work .img-container img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: .4s all ease;
+}
+
+.work .img-container img:hover {
+    filter: grayscale(0)
 }
 
 /*///////////////////
@@ -239,6 +296,13 @@ header h1 {
     display: none;
 }
 
+.about .img-container img {
+    margin: 20px 0 0 0;
+    width: 100%;
+    filter: grayscale(1);
+    transition: .4s all ease;
+}
+
 /*///////////////////
         Contact
 //////////////////*/
@@ -246,4 +310,21 @@ header h1 {
 
 .contact-container {
     display: none;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+form input {
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+
+textarea {
+    margin: 20px 0;
+    padding: 10px 5px;
+    height: 20vh;
+    resize: vertical;
 }
