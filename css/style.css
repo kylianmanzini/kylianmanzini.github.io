@@ -176,7 +176,7 @@ darken + work-show
 
 .darken {
     background: rgba(0, 0, 0, .7);
-    z-index: 5;
+    z-index: 50;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -198,11 +198,11 @@ darken + work-show
     position: fixed;
     top: 10vh;
     height: 80vh;
-    width: 920px;
+    max-width: 920px;
     margin-left: auto;
     margin-right: auto;
     background: white;
-    z-index: 10;
+    z-index: 1000;
     padding: 50px 140px;
     overflow: scroll;
 }
@@ -327,4 +327,56 @@ textarea {
     padding: 10px 5px;
     height: 20vh;
     resize: vertical;
+}
+
+
+@media screen and (max-width:760px) {
+
+    .work .img-container {
+        margin: 20px 0;
+    }
+
+    header {
+        width: 100%;
+        z-index: 10;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    nav ul li.link {
+        font-size: 1.3rem;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .work {
+        grid-template-columns: 100%;
+        grid-template-areas: "title""desc""img";
+    }
+
+    .work-show {
+        padding: 20px 10px;
+        font-size: 1.2rem;
+    }
+
+    .work-show-content {
+        height: auto;
+    }
+
+    .copyright {
+        background: white;
+        width: 100%;
+        bottom: 0;
+        height: 20px;
+        line-height: 20px;
+        z-index: 750;
+    }
 }
