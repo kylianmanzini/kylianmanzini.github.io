@@ -280,12 +280,12 @@ header h1 {
 
 .work .img-container img {
     width: 100%;
-    filter: grayscale(1);
+ /* filter: grayscale(1); */
     transition: .4s all ease;
 }
 
 .work .img-container img:hover {
-    filter: grayscale(0)
+ /* filter: grayscale(0); */
 }
 
 /*///////////////////
