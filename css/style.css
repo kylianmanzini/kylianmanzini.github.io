@@ -339,6 +339,7 @@ textarea {
     header {
         width: 100%;
         z-index: 10;
+        padding-left: 3px;
     }
 
     h1 {
@@ -351,6 +352,7 @@ textarea {
 
     nav ul li.link {
         font-size: 1.3rem;
+        padding-left: 3px; 
     }
 
     .social {
@@ -360,6 +362,14 @@ textarea {
     .work {
         grid-template-columns: 100%;
         grid-template-areas: "title""desc""img";
+    }
+
+    .work .description {
+        text-align: right;
+    }
+
+    .main-container {
+        padding-right: 3px;
     }
 
     .work-show {
@@ -377,6 +387,10 @@ textarea {
         bottom: 0;
         height: 20px;
         line-height: 20px;
-        z-index: 750;
+        z-index: 40;
+        padding-left: 3px;
+    }
+    textarea {
+        height: 10vh;
     }
 }
