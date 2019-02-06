@@ -254,11 +254,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <textarea name="message" placeholder="Your Message" required></textarea>
                         <input type="submit" value="Send">
                     </form>
-                    <form action="/form.html" method="POST">
+                    <form action="" method="POST">
                         <input id="form_name" type="text" name="name" placeholder="Your name" required>
                         <input id="form_email" type="email" name="_replyto" placeholder="Your email" required>
-                        <input type="submit" value="next">
+                        <input onClick="function(){document.getElementById('showForm').style = block};" type="submit" value="next">
                     </form>
+                      <form style="display:none;" id="showForm" action="" method="POST">
+                          <input type="hidden" name="_subject" value="Contact depuis le portfolio" />
+                          <textarea name="message" placeholder="Your Message" required></textarea>
+                          <input type="submit" value="Send">
+                      </form>
                 </div>
 
             </div>
