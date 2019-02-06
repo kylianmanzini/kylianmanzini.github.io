@@ -258,7 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <input id="form_name" type="text" name="name" placeholder="Your name" required>
                         <input id="form_email" type="email" name="_replyto" placeholder="Your email" required>
                         <button onclick="myFunction()">Click me</button>
-                        <textarea class="showForm" style="display:none;" name="message" placeholder="Your Message" required></textarea>
+                        <textarea class="showForm" style="display:none;" name="message" placeholder="Your Message"></textarea>
                         <input class="showForm" style="display:none;" type="submit" value="Send">
                       </form>
                 </div>
@@ -268,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <script>
     function myFunction(){
-    document.getElementByClass("showForm").style.display = "block";
+    document.QuerySelector("#showForm").style.display = "block";
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
