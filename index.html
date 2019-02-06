@@ -257,7 +257,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <form action="" method="POST">
                         <input id="form_name" type="text" name="name" placeholder="Your name" required>
                         <input id="form_email" type="email" name="_replyto" placeholder="Your email" required>
-                        <button onClick="function(){document.getElementByClass('showForm').style = block};">Next</button>
+                        <button onclick="myFunction()">Click me</button>
                         <textarea class="showForm" style="display:none;" name="message" placeholder="Your Message" required></textarea>
                         <input class="showForm" style="display:none;" type="submit" value="Send">
                       </form>
@@ -266,7 +266,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
     </div>
-
+    <script>
+    function myFunction(){
+    document.getElementByClass("showForm").style.display = "block";
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
