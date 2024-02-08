@@ -80,7 +80,6 @@ header {
         margin-top: 10px;
 
         .logotype {
-
             width: calc(var(--header-width) - 80px);
             height: 100%;
             background-position: left;
@@ -92,11 +91,16 @@ header {
             transition: 1.2s ease-in-out .3s;
         }
 
-        .logotype:hover {
+        :hover {
             background-position: right;
             cursor: cell;
         }
-                
+               
+        @media (max-width: 768px){
+            .logotype {
+                width: var(--header-width);
+            }
+        } 
     }
 
     .navigation {
