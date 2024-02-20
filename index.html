@@ -45,11 +45,22 @@
             </div>
         </header>
         <main>
-            <h1>Hi! i'm <span class="blue">Kylian</span>.</h1>
-            <h2><span class="blue">Software Engineer</span> from Switzerland</h2>
-            <br>
-            <p>Website under construction</p>
+            <noscript>
+                <div class="no-js">
+                    <h1><span class="blue">Oh oh...</span></h1>
+                    <h2>It seems like you have disabled <span class="blue">JavaScript</span>.</h2>
+                    <br>
+                    <p>This website requires <span class="blue">JavaScript</span> to be enabled in order to function properly.</p>
+                    <br>
+                    <img src="assets/images/noJS.gif" alt="No JavaScript super cool Gif">
+                </div>
+            </noscript>
+            <div include-html="html/about.html"></div>
         </main>
     </div>
 </body>
+<script>
+    // init inclusion of html files
+    includeHTML();
+</script>
 </html>
