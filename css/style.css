@@ -13,6 +13,7 @@
     --white: #FCFCFC;
     --blue: #0496FF;
     --header-width: 250px;
+    --font-sizer: 18px;
 }
 
 @media (max-width: 768px){
@@ -25,16 +26,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: fontHeavy;
+    color: var(--black);
 }
 
 header, main, body {
     font-family: fontMedium;
+    font-size: calc(var(--font-sizer) * 1);
 }
 
+h1 {
+    font-family: fontHeavy;
+    font-size: calc(var(--font-sizer) * 4);
+}
+
+h2 {
+    font-size: calc(var(--font-sizer) * 2);
+}
+
+li {
+    font-size: calc(var(--font-sizer) * 1.5);
+    list-style: none;
+}
 
 .blue {
     color: var(--blue);
@@ -206,14 +218,5 @@ main {
     width: calc(100% - var(--header-width));
 }
 
-li {
-    font-size: 1.5em;
-    color: #000;
-    list-style: none;
-}
 
-h1 {
-    font-size: 3em;
-    font-family: fontHeavy;
-    color: #000;
 }
