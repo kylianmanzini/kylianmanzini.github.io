@@ -89,7 +89,7 @@ header {
         height: 90px;
         width: 100%;
         margin-bottom: 50px;
-        margin-top: 10px;
+        margin-top: 50px;
 
         .logotype {
             width: calc(var(--header-width) - 80px);
