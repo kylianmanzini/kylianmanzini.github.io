@@ -219,4 +219,18 @@ main {
 }
 
 
+.about {
+    .title {
+        margin-bottom: 16px;
+    }
+    .subtitle {
+        margin-bottom: 32px;
+    }
+    p {
+        margin-bottom: 32px;
+        max-width: 600px;
+    }
+    .larger {
+        font-size: calc(var(--font-sizer) * 1.5);
+    }
 }
