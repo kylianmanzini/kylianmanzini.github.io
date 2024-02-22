@@ -1,5 +1,4 @@
 @font-face {
-    /* TODO : fix font to be truly medium*/
     font-family: fontMedium;
     src: url(../assets/fonts/franklin_gothic-medium.ttf);
 }
@@ -14,6 +13,10 @@
     --blue: #0496FF;
     --header-width: 250px;
     --font-sizer: 18px;
+    --standard-multiple: 1;
+    --title-multiple: 3.4;
+    --subtitle-multiple: 2;
+    --nav-multiple: 1.5;
 }
 
 @media (max-width: 768px){
@@ -31,20 +34,20 @@
 
 header, main, body {
     font-family: fontMedium;
-    font-size: calc(var(--font-sizer) * 1);
+    font-size: calc(var(--font-sizer) * var(--standard-multiple));
 }
 
 h1 {
     font-family: fontHeavy;
-    font-size: calc(var(--font-sizer) * 4);
+    font-size: calc(var(--font-sizer) * var(--title-multiple));
 }
 
 h2 {
-    font-size: calc(var(--font-sizer) * 2);
+    font-size: calc(var(--font-sizer) * var(--subtitle-multiple));
 }
 
 li {
-    font-size: calc(var(--font-sizer) * 1.5);
+    font-size: calc(var(--font-sizer) * var(--nav-multiple));
     list-style: none;
 }
 
@@ -210,27 +213,44 @@ header {
 
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
     height: 100vh;
     width: calc(100% - var(--header-width));
-}
 
+    > div {
+        height: 100vh;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .wrapper{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-content: start;
+        align-self: center;
+        margin-top: calc(var(--font-sizer) * var(--title-multiple) * 1);
+    }
 
-.about {
     .title {
         margin-bottom: 16px;
     }
-    .subtitle {
-        margin-bottom: 32px;
-    }
-    p {
-        margin-bottom: 32px;
-        max-width: 600px;
-    }
-    .larger {
-        font-size: calc(var(--font-sizer) * 1.5);
+
+    .about {
+
+        .subtitle {
+            margin-bottom: 32px;
+        }
+        p {
+            margin-bottom: 32px;
+            max-width: 600px;
+        }
+        .larger {
+            font-size: calc(var(--font-sizer) * 1.5);
+        }
     }
 }
