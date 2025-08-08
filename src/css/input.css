@@ -21,3 +21,10 @@
   .bg-light-grey   { background-color: var(--color-light-grey); }
   .bg-rich-black   { background-color: var(--color-rich-black); }
 }
+
+a.anchor {
+    display: hidden;
+    position: relative;
+    top: -300px;
+    visibility: hidden;
+}
