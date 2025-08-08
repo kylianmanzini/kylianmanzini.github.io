@@ -1,156 +1,159 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kylian Manzini | Ingénieur logiciel & Enseignant</title>
+  <title>Kylian Manzini</title>
   <meta name="description" content="Profil de Kylian Manzini, ingénieur logiciel full stack et enseignant à Sainte-Croix, Suisse." />
+  <link rel="stylesheet" href="./src/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Figtree', sans-serif;
-    }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body id="start" class="font-[Figtree] bg-gray-50 text-gray-900">
 
   <!-- Navbar -->
   <header class="bg-white shadow sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-700">Kylian Manzini</h1>
+      <h1 class="text-2xl font-bold text-blue-700">
+        <a href="#start" class="hover:text-indigo-700 transition">Kylian Manzini</a>
+      </h1>
       <nav class="space-x-6 text-blue-700 font-semibold hidden md:block">
-        <a href="#about" class="hover:text-blue-400 transition">À propos</a>
-        <a href="#skills" class="hover:text-blue-400 transition">Compétences</a>
-        <a href="#experience" class="hover:text-blue-400 transition">Expérience</a>
-        <a href="#education" class="hover:text-blue-400 transition">Formation</a>
-        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        <a class="hover:text-indigo-700 transition" href="#about">À propos</a>
+        <a class="hover:text-indigo-700 transition" href="#contact">Contact</a>
+        <a class="hover:text-indigo-700 transition" href="#skills">Compétences</a>
+        <a class="hover:text-indigo-700 transition" href="#experience">Expérience</a>
+        <a class="hover:text-indigo-700 transition" href="#education">Formation</a>
       </nav>
     </div>
   </header>
 
   <!-- CTA -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-200 to-white shadow-inner">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-3">Ingénieur Logiciel</h2>
-    <p class="text-lg md:text-xl text-blue-800 max-w-xl mx-auto px-4">Master MSE en Informatique · Passionné par le développement full stack et la transmission du savoir</p>
+  <section class="text-center py-20 bg-gradient-to-r from-indigo-600 via-blue-600 to-sky-500 shadow-inner transition-position hover:bg-right w-full bg-gradient-to-r background-animate">
+
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-3">Ingénieur Logiciel</h2>
+    <p class="text-lg md:text-xl text-gray-50 max-w-xl mx-auto px-4">Master MSE en Informatique · Passionné par le développement full stack et la transmission du savoir</p>
   </section>
 
+  <a class="anchor" id="about"></a>
+  <a class="anchor" id="contact"></a>
   <!-- About -->
-  <section id="about" class="max-w-5xl mx-auto mt-16 px-6 md:px-0 grid md:grid-cols-2 gap-10">
+  <section class="max-w-5xl mx-auto mt-16 px-6 md:px-0 grid md:grid-cols-2 gap-10">
     <div class="bg-white rounded-lg shadow-md p-8">
       <h3 class="text-2xl font-bold text-blue-800 mb-4 border-b-4 border-blue-300 inline-block pb-1">À propos de moi</h3>
       <p class="text-gray-800 text-lg">
         Développeur et formateur basé à Sainte-Croix, je construis des solutions modernes tout en enseignant les bases solides de l’informatique. Curieux, polyvalent et orienté humain.
       </p>
     </div>
-
     <!-- Contact -->
-    <div id="contact" class="bg-white rounded-lg shadow-md p-8 flex flex-col gap-4 items-start">
+    <div class="bg-white rounded-lg shadow-md p-8 flex flex-col gap-4 items-start">
       <h3 class="text-2xl font-bold text-blue-800 mb-2 border-b-4 border-blue-300 inline-block pb-1">Me contacter</h3>
       <p class="text-gray-800">Envie d'échanger ou de collaborer ? Retrouvez-moi sur LinkedIn.</p>
-      <a href="https://www.linkedin.com/in/kylianmanzini-03942a15b" target="_blank" rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-blue-500 transition">
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-          <path d="M19 0h-14c-2.76...z" />
+      <a href="https://www.linkedin.com/in/kylian-manzini-03942a15b/" target="_blank" rel="noopener noreferrer"
+        class="group inline-flex items-center gap-2 text-white px-6 py-3 rounded-full font-semibold shadow bg-gradient-to-tr from-blue-400 to-blue-400 hover:to-indigo-600 hover:from-blue-500 transition">
+        <svg class="w-6 h-6 dark:text-white -left-1 -translate-x-0 group-hover:translate-x-2 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m9 5 7 7-7 7"/>
         </svg>
-        Voir mon LinkedIn
+        <div class="-translate-x-0 group-hover:translate-x-1 transition-all">Voir mon LinkedIn</div>
       </a>
     </div>
   </section>
 
+  <a class="anchor" id="skills"></a> 
   <!-- Skills -->
-  <section id="skills" class="max-w-5xl mx-auto mt-20 px-6">
+  <section class="max-w-5xl mx-auto mt-16 px-6">
     <h3 class="text-2xl font-bold text-blue-800 mb-6 border-b-4 border-blue-300 inline-block pb-1">Compétences</h3>
     <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">JavaScript</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">TypeScript</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">React</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Flutter</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Python</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Java</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Spring Boot</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Quarkus</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">SQL</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">NoSQL</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Kubernetes</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Docker</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">API REST</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Git</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Cloud</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">AWS</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">GCP</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">DevOps</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">CI/CD</span>
-      <span class="px-4 py-2 bg-blue-100 text-blue-800 font-medium rounded-full text-center hover:bg-blue-200 hover:scale-105 transition">Full-Stack</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Java</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Spring Boot</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Quarkus</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">JavaScript</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">TypeScript</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">React</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Flutter</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Python</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">SQL</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">NoSQL</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Kubernetes</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Docker</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">API</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Git</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Cloud</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">AWS</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">GCP</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">DevOps</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">CI/CD</span>
+      <span class="px-4 py-2 bg-gradient-to-tr from-blue-400 to-blue-400 text-white font-medium rounded-full text-center hover:to-indigo-400 hover:from-blue-600 hover:scale-105 transition">Full-Stack</span>
     </div>
   </section>
   
-<section class="max-w-5xl mx-auto mt-20 px-6 mb-24 grid md:grid-cols-2 gap-12">
   
-  <!-- Experience -->
-  <section id="experience" class="max-w-5xl mx-auto px-6">
-    <h3 class="text-2xl font-bold text-blue-800 mb-6 border-b-4 border-blue-300 inline-block pb-1">Expérience</h3>
-    <div class="grid gap-8 md:grid-cols-1">
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 cursor-default">
-        <h4 class="text-xl font-semibold text-blue-700 mb-1">CPNV — Enseignant</h4>
-        <time class="block mb-3 text-sm text-blue-600 font-medium">2025 - maintenant</time>
-        <p class="text-gray-700 leading-relaxed">
-          J’enseigne React, Flutter, PHP et bien plus à des étudiants motivés. La pédagogie me pousse à rester à jour techniquement.
-        </p>
-      </div>
+  <a class="anchor" id="experience"></a>
+  <a class="anchor" id="education"></a>
+  <section class="max-w-5xl mx-auto mt-16 mb-8 px-6 grid md:grid-cols-2 gap-12">
+    
+    <!-- Experience -->
+    <section class="max-w-5xl mx-auto px-0">
+      <h3 class="text-2xl font-bold text-blue-800 mb-6 border-b-4 border-blue-300 inline-block pb-1">Expérience</h3>
+      <div class="grid gap-8 md:grid-cols-1">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 cursor-default">
+          <h4 class="text-xl font-semibold text-blue-700 mb-1">CPNV — Enseignant</h4>
+          <time class="block mb-3 text-sm text-blue-600 font-medium">2025 - maintenant</time>
+          <p class="text-gray-700 leading-relaxed">
+            J’enseigne React, Flutter, PHP et bien plus à des étudiants motivés. La pédagogie me pousse à rester à jour techniquement.
+          </p>
+        </div>
 
-      <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 cursor-default">
-        <h4 class="text-xl font-semibold text-blue-700 mb-1">Kaizen Classroom</h4>
-        <time class="block mb-3 text-sm text-blue-600 font-medium">2024 — maintenant</time>
-        <p class="text-gray-700 leading-relaxed">
-          Cours d’appui personnalisés pour aider les jeunes à surmonter leurs blocages techniques et théoriques.
-        </p>
-      </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300 cursor-default">
+          <h4 class="text-xl font-semibold text-blue-700 mb-1">Kaizen Classroom</h4>
+          <time class="block mb-3 text-sm text-blue-600 font-medium">2024 — maintenant</time>
+          <p class="text-gray-700 leading-relaxed">
+            Cours d’appui personnalisés pour aider les jeunes à surmonter leurs blocages techniques et théoriques.
+          </p>
+        </div>
+    </section>
+
+    
+    <!-- Formation -->
+    <section>
+      <h3 class="text-2xl font-bold text-blue-800 mb-6 border-b-4 border-blue-300 inline-block pb-1">Formation</h3>
+      <ol class="relative border-l border-blue-300 pl-6 ml-6">
+        
+        <li class="mb-10 ml-4">
+          <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-blue-700">2025 — maintenant</time>
+          <h4 class="text-lg font-semibold text-gray-900">Master MSE en Informatique</h4>
+          <p class="text-base text-gray-700">HES-SO, Lausanne</p>
+        </li>
+
+        <li class="mb-10 ml-4">
+          <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-blue-700">2021 — 2024</time>
+          <h4 class="text-lg font-semibold text-gray-900">Bachelor en Informatique Logicielle</h4>
+          <p class="text-base text-gray-700">HEIG-VD, Yverdon-les-Bains</p>
+        </li>
+
+        <li class="mb-10 ml-4">
+          <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-blue-700">2020 — 2021</time>
+          <h4 class="text-lg font-semibold text-gray-900">Service Militaire</h4>
+          <p class="text-base text-gray-700">Explorateur radio, Thoune</p>
+        </li>
+
+        <li class="ml-4">
+          <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
+          <time class="mb-1 text-sm font-normal leading-none text-blue-700">2016 — 2020</time>
+          <h4 class="text-lg font-semibold text-gray-900">CFC + Maturité Médiamaticien</h4>
+          <p class="text-base text-gray-700">CPNV, Sainte-Croix</p>
+        </li>
+
+      </ol>
+    </section>
+
   </section>
-
-  
-  <!-- Formation -->
-  <section id="education">
-    <h3 class="text-2xl font-bold text-blue-800 mb-6 border-b-4 border-blue-300 inline-block pb-1">Formation</h3>
-    <ol class="relative border-l border-blue-300 pl-6">
-      
-      <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-blue-700">2025 — maintenant</time>
-        <h4 class="text-lg font-semibold text-gray-900">Master MSE en Informatique</h4>
-        <p class="text-base text-gray-700">HES-SO</p>
-      </li>
-
-      <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-blue-700">2021 — 2024</time>
-        <h4 class="text-lg font-semibold text-gray-900">Bachelor en Informatique Logicielle</h4>
-        <p class="text-base text-gray-700">HEIG-VD</p>
-      </li>
-
-      <li class="mb-10 ml-4">
-        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-blue-700">2020 — 2021</time>
-        <h4 class="text-lg font-semibold text-gray-900">Service Militaire</h4>
-        <p class="text-base text-gray-700">Explorateur radio</p>
-      </li>
-
-      <li class="ml-4">
-        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-1.5 border border-white"></div>
-        <time class="mb-1 text-sm font-normal leading-none text-blue-700">2016 — 2020</time>
-        <h4 class="text-lg font-semibold text-gray-900">CFC + Maturité Médiamaticien</h4>
-        <p class="text-base text-gray-700">CPNV</p>
-      </li>
-
-    </ol>
-  </section>
-
-</section>
 
 
   <!-- Footer -->
-  <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-200">
-    &copy; 2025 Kylian Manzini — Tous droits réservés.
+  <footer class="text-center py-6 text-gray-50 text-sm border-t border-gray-200 bg-blue-500">
+    &copy; 2025 Kylian Manzini — <em>fait avec amour et passion =D</em>
   </footer>
 
 </body>
