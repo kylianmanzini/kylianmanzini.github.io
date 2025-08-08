@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-main: #001BB7;
+  --color-main-light: #0046FF;
+  --color-highlight: #FF8040;
+  --color-light-grey: #E9E9E9;
+  --color-rich-black: #1A1A1A;
+}
+
+@layer utilities {
+  .text-main       { color: var(--color-main); }
+  .text-main-light { color: var(--color-main-light); }
+  .text-highlight  { color: var(--color-highlight); }
+  .text-light-grey { color: var(--color-light-grey); }
+  .text-rich-black { color: var(--color-rich-black); }
+
+  .bg-main         { background-color: var(--color-main); }
+  .bg-main-light   { background-color: var(--color-main-light); }
+  .bg-highlight    { background-color: var(--color-highlight); }
+  .bg-light-grey   { background-color: var(--color-light-grey); }
+  .bg-rich-black   { background-color: var(--color-rich-black); }
+}
